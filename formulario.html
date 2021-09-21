@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Form</title>
+</head>
+
+<body>
+
+  <form method="POST" class="form-container">
+    <h2>Datos Personales</h2>
+    <label htmlFor="name">Nombre (Obligatorio)</label>
+    <input type="text" required placeholder="nombre" id="name" />
+    <label htmlFor="email">Email (Obligatorio)</label>
+    <input type="text" required placeholder="email" id="email" />
+    <label htmlFor="phone">Teléfono (Obligatorio)</label>
+    <input type="tel" required placeholder="teléfono" id="phone" />
+    <label htmlFor="country">País</label>
+
+    <select name="país" id="country">
+      <optgroup label="Pais">
+        <option id="arg" value="argentina">Argentina</option>
+        <option id="col" value="colombia">Colombia</option>
+        <option id="uru" value="uruguay">Uruguay</option>
+        <option id="ven" value="venezuela">Venezuela</option>
+        <option id="chi" value="chile">Chile</option>
+        <option id="mex" value="mexico">Mexico</option>
+        <option id="bol" value="bolivia">Bolivia</option>
+        <option id="bra" value="brasil">Brasil</option>
+      </optgroup>
+    </select>
+    <h2>Estado Civil</h2>
+    <div class="container">
+      <input type="radio" name="status" id="single" value="Solter@" />
+      <label htmlFor="single">Solter@</label>
+
+      <input type="radio" name="status" id="married" value="Casad@" />
+      <label htmlFor="married">Casad@</label>
+    </div>
+    <h2>Hobbies</h2>
+    <div class="container">
+      
+      <input type="checkbox" name="hobbies" id="football" value="Football" />
+      <label htmlFor="football">Futbol</label>
+
+      <input type="checkbox" name="tennis" id="tennis" value="Tennis" />
+      <label htmlFor="tennis">Tennis</label>
+
+      <input type="checkbox" name="dance" id="dance" value="Dance" />
+      <label htmlFor="dance">Danza</label>
+
+      <input type="checkbox" name="music" id="music" value="Music" />
+      <label htmlFor="music">Musica</label>
+
+      <input type="checkbox" name="fishing" id="fishing" value="Fishing" />
+      <label htmlFor="fishing">Pescar</label>
+
+      <input type="checkbox" name="series" id="series" value="Series" />
+      <label htmlFor="series">Ver series</label>
+
+      <input type="checkbox" name="videogames" id="videogames" value="Videogames" />
+      <label htmlFor="videogames">Jugar videojuegos</label>
+
+      <input type="checkbox" name="others" id="others" value="Others" />
+      <label htmlFor="others">Otros</label>
+    </div>
+  </form>
+</body>
+
+</html>
