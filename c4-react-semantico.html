@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Me obligan a usar divs parte 2</title>
+</head>
+
+<body>
+    <div role="banner">
+        <h1>Mercado Libre 🤝 en 1999</h1>
+    </div>
+    <div role="navigation" aria -label="Enlaces">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </div>
+    <div role="main" class="container">
+        <h2>Formulario de Contacto</h2>
+        <div role="form" class="form-container">
+            <input type="text" name="input-name" id="input-name" aria-label="Nombre" />
+            <input type="text" name="input-last-name" id="input-last-name" aria-label="Apellido" />
+            <input type="text" name="input-email" id="input-email" aria-label="Email" />
+            <input type="number" name="input-dni" id="input-dni" aria-label="DNI" />
+            <button type="submit" name="btn-submit" id="btn-submit">Enviar</button>
+        </div>
+        <h2>Artículos a la venta</h2>
+        <section class="section-container">
+        <div role="article">
+            <div role="figure">
+                <h3>Computadora </h3>
+                <img src="./assets/macbook.png" alt="">
+        <figcaption>Macbook Air New 2021 Chip M1 256gb 8gb 8 Cores</figcaption>
+        <button type="button"  name="btn-comprar" id="btn-comprar-macbook">Comprar</button>
+            </div>
+        </div>
+        <div role="article">
+            <div role="figure">
+                <h3>Silla gamer pro </h3>
+                <img src="./assets/sillaGamer.png" alt="">
+        <figcaption>Hermosa silla gamer azul y ergonómica para presumir a tus amigos</figcaption>
+        <button type="button" name="btn-comprar" id="btn-comprar-silla" >Comprar</button>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div role="contentinfo">
+        <p>Soy Lara </p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
